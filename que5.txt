@@ -1,0 +1,27 @@
+class Expenditure:
+
+    expenditure=25000
+
+    savings = 40000
+
+    t = 0
+
+    def Display(self):
+
+        print("Expenditure ={}\nSavings ={} ".format(self.expenditure,self.savings))
+
+    def totalDisplay(self):
+
+        print("Total salary ={}".format(self.t))
+
+    def total(self):
+
+        Expenditure.t = self.expenditure+self.savings
+
+x=Expenditure()
+
+x.Display()
+
+x.total()
+
+x.totalDisplay()
