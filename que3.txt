@@ -1,0 +1,38 @@
+class Temperature:
+
+    n = 0
+
+    x=0
+
+    y=0
+
+    def convertFahrenheit(self):
+
+        self.x=(self.n*1.8) + 32
+
+        print("In Fahrenheit {}".format(self.x))
+
+    def convertCelsius(self):
+
+        self.y=(self.n - 32) / 1.8
+
+        print("In Celsius {}".format(self.y))
+
+
+z=int(input("Type 1 for Fahrenheit and 2 for Celsius convesion:"))
+
+if(z==1):
+
+    a = Temperature()
+
+    a.n =float(input("Enter your temperature:"))
+  
+  a.convertFahrenheit()
+
+elif(z==2):
+
+    b = Temperature()
+
+    b.n =float(input("Enter your temperature:"))
+  
+  b.convertCelsius()
