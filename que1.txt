@@ -1,0 +1,18 @@
+class circle:
+
+    radius = 4
+
+    pi = 3.14
+
+    def getArea(self):
+
+        x= self.pi*self.radius*self.radius
+
+        print("Area is {}".format(x))
+
+    def getCircumference(self):
+
+        y = 2*self.pi*self.radius
+        
+        print("Circumference is {}".format(y))
+        
