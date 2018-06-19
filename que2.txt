@@ -1,0 +1,16 @@
+class Student:
+
+    name = 'Niraj'
+
+    rollno ='6789054321'
+
+    def Display(self):
+
+        print("Name is {}".format(self.name))
+
+        print("Rollno is {}".format(self.rollno))
+
+
+x=Student()
+
+x.Display()
