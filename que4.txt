@@ -1,0 +1,51 @@
+class MovieDetails:
+
+    name = 'Captain America'
+
+    artistname = 'Chris Evans'
+
+    Year = '2010'
+
+    ratings = '3/5'
+
+    def Display(self):
+
+        print("Name of the movie is {}".format(self.name))
+
+        print("Name of the lead actor is {}".format(self.artistname))
+
+        print("Year of release is {}".format(self.Year))
+
+        print("Stars given  to the movie is {}".format(self.ratings))
+
+    def Update(self):
+
+        self.a=input(print("Name of the movie is "))
+
+        MovieDetails.name = self.a
+
+        self.b=input(print("Name of the lead actor is "))
+  
+      MovieDetails.artistname = self.b
+ 
+       self.c=input(print("Year of release is "))
+
+        MovieDetails.Year = self.c
+ 
+       self.d=input(print("Stars given to the movie is"))
+
+        MovieDetails.ratings = self.d
+
+n = input("Update movie details or Display movie details(u/d) :")
+
+x = MovieDetails()
+
+if n == 'u':
+
+    x.Update()
+
+    x.Display()
+
+elif n == 'd':
+
+    x.Display()
